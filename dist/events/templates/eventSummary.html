@@ -1,9 +1,0 @@
-<div>
-    <p class="warning" ng-if="eventListIsEmpty()">You have no events... Why don't you add one to start with?!</p>
-    <p class="success" ng-if="!eventListIsEmpty()">You have {{ numberOfEvents() }} events</p>
-    <ul>
-        <li ng-repeat="event in events" ng-click="selectEvent(event)">
-            {{ event.eventStartDate | date: longDate }} - {{ event.eventName }} - {{ event.eventType }}
-        </li>
-    </ul>
-</div>
